@@ -16,7 +16,9 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: "https://localhost:1337",
+        apiURL: process.env.DEPLOY_URL
+          ? "https://crow-concepts-admin.herokuapp.com"
+          : "https://localhost:1337",
         contentTypes: ["post"],
         queryLimit: 1000,
       },

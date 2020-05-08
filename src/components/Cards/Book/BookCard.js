@@ -1,47 +1,47 @@
-import React, { useEffect, useRef, useState } from "react";
-import PropTypes from "prop-types";
+import React, { useEffect, useRef, useState } from "react"
+import PropTypes from "prop-types"
 
-import { P } from "../../Text/text_index";
-import { SecondaryBtn, PrimaryBtn } from "../../Buttons/button_index";
-import Image from "../../Image.styled";
-import { FlexContainer as Container, Padder } from "../../Layouts/layout_index";
-import { toggleClass } from "../../../utils/toggleClass";
-import { Link } from "../../Text/text_index";
+import { P } from "../../Text/text_index"
+import { SecondaryBtn, PrimaryBtn } from "../../Buttons/button_index"
+import Image from "../../Image.styled"
+import { FlexContainer as Container, Padder } from "../../Layouts/layout_index"
+import { toggleClass } from "../../../utils/toggleClass"
+import { Link } from "../../Text/text_index"
 
-function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height
-  };
-}
+// function getWindowDimensions() {
+//   const { innerWidth: width, innerHeight: height } = window;
+//   return {
+//     width,
+//     height
+//   };
+// }
 
-function useWindowDimensions() {
-  const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
-  );
+// function useWindowDimensions() {
+//   const [windowDimensions, setWindowDimensions] = useState(
+//     getWindowDimensions()
+//   );
 
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
+//   useEffect(() => {
+//     function handleResize() {
+//       setWindowDimensions(getWindowDimensions());
+//     }
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+//     window.addEventListener("resize", handleResize);
+//     return () => window.removeEventListener("resize", handleResize);
+//   }, []);
 
-  return windowDimensions;
-}
+//   return windowDimensions;
+// }
 
 const BookCard = props => {
-  const desc = useRef(null);
-  const { height, width } = useWindowDimensions();
+  const desc = useRef(null)
+  const { height, width } = useWindowDimensions()
 
   useEffect(() => {
-    console.log(desc.current);
-  }, [desc]);
+    console.log(desc.current)
+  }, [desc])
 
-  if (width <= 780) {
+  if (true) {
     return (
       <Container {...props} direction="column">
         <Padder>
@@ -62,7 +62,7 @@ const BookCard = props => {
           </Container>
         </Padder>
       </Container>
-    );
+    )
   } else {
     return (
       <Container {...props} direction="row" align_items="flex-start">
@@ -82,15 +82,15 @@ const BookCard = props => {
           </Padder>
         </Container>
       </Container>
-    );
+    )
   }
-};
+}
 
 BookCard.propTypes = {
   author: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
-  title: PropTypes.string
-};
+  title: PropTypes.string,
+}
 
-export default BookCard;
+export default BookCard

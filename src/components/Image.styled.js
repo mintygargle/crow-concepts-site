@@ -1,11 +1,11 @@
-import styled, { css } from "styled-components";
-import { default as component } from "./Image";
+import styled, { css } from "styled-components"
+import { default as component } from "./Image copy"
 
 const border = css`
   border-style: solid;
   border-color: ${props => props.theme.white};
   border-width: ${props => props.theme.border_width};
-`;
+`
 
 const Image = styled(component)`
   ${props => (props.border ? border : "")};
@@ -15,6 +15,6 @@ const Image = styled(component)`
   @media (max-width: 500px) {
     max-width: 100%;
   }
-`;
+`
 
-export default Image;
+export default Image

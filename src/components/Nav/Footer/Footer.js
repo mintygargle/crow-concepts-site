@@ -1,12 +1,12 @@
-import React from "react";
-import { default as FooterContainer } from "../../Layouts/FlexContainer";
-import { default as LinkContainer } from "../../Layouts/FlexContainer";
-import { default as ExploreLinks } from "../../Layouts/FlexContainer";
-import { default as SocialLinks } from "../../Layouts/FlexContainer";
-import { default as CopyrightContainer } from "../../Layouts/Padder";
-import Link from "../../Text/Link/Link";
-import { default as FooterHeading } from "../../Text/Headings/H2.styled";
-import { default as Copyright } from "../../Text/Copyright";
+import React from "react"
+import { default as FooterContainer } from "../../Layouts/FlexContainer"
+import { default as LinkContainer } from "../../Layouts/FlexContainer"
+import { default as ExploreLinks } from "../../Layouts/FlexContainer"
+import { default as SocialLinks } from "../../Layouts/FlexContainer"
+import { default as CopyrightContainer } from "../../Layouts/Padder"
+import { Link } from "gatsby"
+import { default as FooterHeading } from "../../Text/Headings/H2.styled"
+import { default as Copyright } from "../../Text/Copyright"
 
 const Footer = props => {
   return (
@@ -36,7 +36,7 @@ const Footer = props => {
         <Copyright size="">©2020 CrowConcepts</Copyright>
       </CopyrightContainer>
     </FooterContainer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

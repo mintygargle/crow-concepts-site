@@ -1,11 +1,10 @@
-import React, { useState, useRef } from "react";
-import styled from "styled-components";
-import LogoImg from "../../../img/Crow (4).svg";
-import MainLinks from "../MainLinks";
-import { Link } from "react-router-dom";
-import Menu from "../Menu/Menu";
-import Burger from "../Menu/Burger";
-import { useOnClickOutside } from "../../../utils/useOnClickOutside";
+import React, { useState, useRef } from "react"
+import styled from "styled-components"
+import LogoImg from "../../../images/Crow (4).svg"
+import MainLinks from "../MainLinks"
+import Menu from "../Menu/Menu"
+import Burger from "../Menu/Burger"
+import { useOnClickOutside } from "../../../utils/useOnClickOutside"
 
 const MainNavContainer = styled.header`
   align-content: center;
@@ -101,19 +100,19 @@ const MainNavContainer = styled.header`
       }
     }
   }
-`;
+`
 
 const LogoContainer = styled.div`
   width: 10%;
   height: auto;
   margin-right: 1rem;
-`;
+`
 
 const Logo = styled.img`
   position: absolute;
   bottom: 0;
   cursor: pointer;
-`;
+`
 
 const TitleContainer = styled.div`
   width: 40%;
@@ -128,7 +127,7 @@ const TitleContainer = styled.div`
     display: none;
     width: 0;
   }
-`;
+`
 
 const Title = styled.p`
   font-size: 24px;
@@ -140,14 +139,14 @@ const Title = styled.p`
     bottom: 0px;
     top: 5px;
   }
-`;
+`
 
 const HamburgerContainer = styled.div`
   width: 20%;
   @media (max-width: ${props => props.theme.tablet}) {
     line-height: 0.8;
   }
-`;
+`
 
 const LinkMenu = styled.nav`
   display: flex;
@@ -159,12 +158,12 @@ const LinkMenu = styled.nav`
   a {
     padding: 0 1rem;
   }
-`;
+`
 
 const Header = () => {
-  const [open, setOpen] = useState(false);
-  const node = useRef();
-  useOnClickOutside(node, () => setOpen(false));
+  const [open, setOpen] = useState(false)
+  const node = useRef()
+  useOnClickOutside(node, () => setOpen(false))
 
   return (
     <div>
@@ -190,7 +189,7 @@ const Header = () => {
         <MainLinks direction="column" />
       </Menu>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

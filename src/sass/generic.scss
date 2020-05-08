@@ -1,0 +1,37 @@
+/*********************************
+// GENERIC
+/*********************************/
+
+::selection {
+  background: $color-danger;
+  color: white; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $color-danger;
+  color: white; /* Gecko Browsers */
+}
+
+:-webkit-any(article, aside, nav, section) h1 {
+  font-size: 2em;
+}
+:-webkit-any(article, aside, nav, section) h2 {
+  font-size: 1.5em;
+}
+:-webkit-any(article, aside, nav, section) h3 {
+  font-size: 1.2em;
+}
+:-webkit-any(article, aside, nav, section) h4 {
+  font-size: 1.1em;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+}

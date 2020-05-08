@@ -1,0 +1,240 @@
+/*********************************
+// OBJECTS
+/*********************************/
+
+// Wrappers
+.wrapper {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 1em;
+}
+
+.full-width {
+  width: 100%;
+}
+
+// Grids
+.grid {
+  display: grid;
+  &__item {
+    max-width: fit-content;
+    height: auto;
+  }
+
+  &--col-1 {
+    grid-template-columns: auto;
+  }
+  &--col-2 {
+    grid-template-columns: auto auto;
+  }
+  &--col-3 {
+    grid-template-columns: auto auto auto;
+  }
+  &--col-4 {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+// Flexboxes
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+// Alignment
+.v-align-text {
+  text-align: center;
+}
+
+.v-center {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+}
+
+.h-center {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+}
+
+// Lists
+.bullet-list {
+  font-size: 1em;
+  margin-bottom: 0.6em;
+  list-style: unset;
+  padding-left: 1em;
+  li {
+    vertical-align: middle;
+  }
+  li::before {
+    font-weight: bold;
+    display: inline-block;
+  }
+}
+
+// Spacers
+.spacer--small {
+  height: 0.8rem;
+  width: auto;
+  max-width: 100%;
+}
+.spacer--medium {
+  height: 1rem;
+  width: auto;
+  max-width: 100%;
+}
+.spacer--large {
+  height: 1.5rem;
+  width: auto;
+  max-width: 100%;
+}
+
+.margin {
+  margin: 1rem;
+}
+
+.m-1r {
+  margin: 1rem;
+}
+
+.m-2r {
+  margin: 2rem;
+}
+
+.m-3r {
+  margin: 3rem;
+}
+
+.m-4r {
+  margin: 4rem;
+}
+
+.mt-0r {
+  margin-top: 0;
+}
+
+.mb-0r {
+  margin-bottom: 0;
+}
+
+.mb-1r {
+  margin-bottom: 1rem;
+}
+
+.mb-2r {
+  margin-bottom: 2rem;
+}
+
+// Stickies
+.sticky-header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.sticky {
+  position: fixed;
+  top: 75px;
+  z-index: 1;
+}
+
+// Styles
+.border {
+  border-style: solid;
+  border-radius: 16px;
+  border-width: 1px;
+  border-color: "#f8f8f8";
+}
+
+// VFX
+.--faded {
+  opacity: 0.8;
+}
+.--grayscale {
+  filter: grayscale(1);
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.transition {
+  transition: 0.4s;
+}
+
+.reflection-text {
+  position: relative;
+}
+
+.reflection-text::after {
+  content: "CrowConcepts";
+  position: fixed;
+  color: #ffffff;
+  right: 0%;
+  left: 0%;
+  bottom: 30%;
+  width: inherit;
+  z-index: 0;
+  transform: scaleY(-1);
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    right top,
+    right bottom,
+    from(transparent),
+    color-stop(30%, transparent),
+    to(rgba(0, 0, 0, 0.5))
+  );
+}
+
+// Dimensions
+.flat {
+  height: 0%;
+  line-height: 0;
+  opacity: 0;
+}
+
+.full {
+  height: 100%;
+}
+
+// Layers
+.foreground {
+  z-index: 2;
+}
+
+.background {
+  z-index: 0;
+}
+
+// Colors
+.bg-color {
+  background-color: $background;
+}

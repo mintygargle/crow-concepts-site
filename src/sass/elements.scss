@@ -1,0 +1,128 @@
+/*********************************
+// ELEMENTS
+/*********************************/
+
+// General
+html,
+body {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-color: $background;
+  box-sizing: border-box;
+  color: $color-text;
+  font-family: $font-secondary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+title {
+  display: unset;
+}
+
+head {
+  margin-bottom: 2em;
+}
+
+// Navigation sections
+header {
+  padding-top: 1em;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+// Partitions
+main {
+  display: grid;
+}
+section {
+  padding: 1em;
+  height: fit-content;
+}
+article {
+  margin: 0 auto;
+  max-width: 36em;
+}
+
+// Headings, Paragraphs, Links
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+a {
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(120%);
+  }
+}
+
+a:visited {
+  color: $color-secondary;
+}
+
+// Buttons
+button,
+input[type="submit"] {
+  @include background-color-transition;
+  @include button-shape;
+  @include inset-shadow;
+
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1em;
+  max-width: fit-content;
+  padding: 0.6em 1.1em;
+  width: 100%;
+}
+
+// Forms
+textarea,
+input[type="text"],
+input[type="name"],
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="tel"] {
+  border-radius: $border-radius;
+  border: none;
+  display: block;
+  margin-bottom: $margin-minor;
+  padding-left: 1em;
+  padding: $padding-general;
+}
+
+// Lists
+// ul {
+//   list-style: none;
+// }
+
+//Images
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,97 @@
+/*********************************
+// SETTINGS
+/*********************************/
+// --Fonts--
+$font-primary: "Playfair Display", serif;
+$font-secondary: "Roboto", sans-serif;
+
+// --Colors--
+$color-primary: #6499aa;
+$color-secondary: #868d8f;
+$color-background: #111010;
+$color-text: #f8f8f8;
+$color-white: #f8f8f8;
+$color-black: #252523;
+$color-gray: #868d8f;
+$color-accent: #ccdbdc;
+$color-info: #b8b8d1;
+$color-success: #9ee493;
+$color-warning: #e3d26f;
+$color-danger: #fb3640;
+$color-nav: #011936;
+
+$accent-dark: #011936;
+$accent-light: #ccdbdc;
+$background: #111010;
+$font-dark: #868d8f;
+$font-light: #f8f8f8;
+$primary: #9cb3bb;
+$secondary: #868d8f;
+$warning: #fb3640;
+
+// --Spacing--
+// letter and line spacing
+$letterspace-primary: 0.07em;
+$letterspace-secondary: 0.04em;
+$linespacing: 1.5em;
+// Margins
+$margin-major: 2em;
+$margin-minor: 1em;
+$margin-heading-top: 2em;
+$margin-heading-bottom: 0.5em;
+// Padding
+$padding-wrapper: 2em;
+$padding-general: 0.5em;
+
+// --Styles--
+// Shadows
+$shadow-spread: -6px;
+$shadow-blur: 0px;
+$shadow-x: 20px;
+$shadow-y: 20px;
+$shadow-color: #0000004d;
+// Borders
+$border-radius: 16px;
+$border-width: 1px;
+// Dividers
+$divider-thickness: 2px;
+$divider-length: 60%;
+
+// --Animations--
+// Scrolling
+$scrolling-delay: 100ms;
+$scrolling-duration: "normal";
+// Hover
+$hover-delay: 100ms;
+$hover-duration: "normal";
+$hover-button-delay: 100ms;
+$hover-button-duration: "normal";
+$hover-link-delay: 100ms;
+$hover-link-duration: "normal";
+// Click
+$click-button-delay: 100ms;
+$click-button-duration: "normal";
+$click-link-delay: 100ms;
+$click-link-duration: "normal";
+
+// --Sizes--
+// Box sizes
+// Button Sizes
+// Font Sizes
+$font-large: 3em;
+$font-medium: 2em;
+$font-normal: 1em;
+$font-small: 0.7em;
+
+$size-title: 3em;
+$size-heading-1: 2em;
+$size-heading-2: 2em;
+$size-heading-3: 2em;
+$size-heading-4: 2em;
+$size-heading-5: 2em;
+$size-paragraph: 1em;
+$size-quote: 2rem;
+// Screen sizes
+$desktop: 1200px;
+$tablet: 770px;
+$mobile: 320px;

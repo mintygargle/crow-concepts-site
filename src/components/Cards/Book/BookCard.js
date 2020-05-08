@@ -35,7 +35,7 @@ import { Link } from "../../Text/text_index"
 
 const BookCard = props => {
   const desc = useRef(null)
-  const { height, width } = useWindowDimensions()
+  // const { height, width } = useWindowDimensions()
 
   useEffect(() => {
     console.log(desc.current)

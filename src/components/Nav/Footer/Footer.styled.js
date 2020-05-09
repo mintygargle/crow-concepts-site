@@ -1,11 +1,12 @@
-import styled from "styled-components";
-import { default as component } from "./Footer";
+import styled from "styled-components"
+import { default as component } from "./Footer"
 
 const Footer = styled(component)`
   background-color: ${props => props.theme.primary};
   width: 100%;
   padding: 1em;
   margin-top: 100px;
+  z-index: 2;
 
   a,
   p,
@@ -28,6 +29,6 @@ const Footer = styled(component)`
       width: 100%;
     }
   }
-`;
+`
 
-export default Footer;
+export default Footer

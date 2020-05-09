@@ -13,6 +13,7 @@ import {
 import Image from "../components/Image.styled"
 import { SecondaryBtn } from "../components/Buttons/button_index"
 import * as Text from "../components/Text/text_index"
+import ServiceSection from "../components/Layouts/Section"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -24,7 +25,7 @@ const IndexPage = ({ data }) => (
         tagline="Create your concepts"
       ></Hero>
     </section>
-    <section className="--center col foreground bg-color">
+    <ServiceSection className="--center col foreground bg-color">
       <Text.HR />
 
       <Container
@@ -36,6 +37,7 @@ const IndexPage = ({ data }) => (
           direction="row"
           spacing="space-evenly"
           align_items="flex-start"
+          className="service-container"
         >
           <Image className="foreground" src={Mountains} width="50%"></Image>
           <Container direction="column" className="m-2r mt-0r">
@@ -51,6 +53,7 @@ const IndexPage = ({ data }) => (
           direction="row"
           spacing="space-evenly"
           align_items="flex-start"
+          className="service-container"
         >
           <Container direction="column" className="m-2r mt-0r">
             <Text.H1>Art</Text.H1>
@@ -67,6 +70,7 @@ const IndexPage = ({ data }) => (
           direction="row"
           spacing="space-evenly"
           align_items="flex-start"
+          className="service-container"
         >
           <Image className="foreground" src={Books} width="50%"></Image>
           <Container direction="column" className="m-2r mt-0r">
@@ -84,7 +88,7 @@ const IndexPage = ({ data }) => (
       <SecondaryBtn className="m-4r">
         <Link to="/photos">View Gallery</Link>
       </SecondaryBtn>
-    </section>
+    </ServiceSection>
   </Layout>
 )
 

@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
-import Hero from "../components/Hero"
+import Hero from "../components/Hero.styled"
 import Lake from "../images/lake.jpg"
 import Mountains from "../images/benjamin-voros-phIFdC6lA4E-unsplash.jpg"
 import Books from "../images/janko-ferlic-sfL_QOnmy00-unsplash.jpg"

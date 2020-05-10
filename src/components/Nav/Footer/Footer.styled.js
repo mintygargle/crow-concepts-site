@@ -8,6 +8,12 @@ const Footer = styled(component)`
   margin-top: 100px;
   z-index: 2;
 
+  h2 {
+    @media (max-width: 420px) {
+      font-size: ${props => props.theme.small};
+    }
+  }
+
   a,
   p,
   h1 {

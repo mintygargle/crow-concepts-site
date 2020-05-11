@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const StyledMenu = styled.nav`
   display: flex;
@@ -26,6 +26,8 @@ export const StyledMenu = styled.nav`
   a {
     color: white;
        font-size: 1.2rem;
+       margin-top: 0.2rem;
+       margin-bottom: 0.2rem;
 
 
        &:hover {
@@ -34,4 +36,4 @@ export const StyledMenu = styled.nav`
     }
   
   }
-`;
+`

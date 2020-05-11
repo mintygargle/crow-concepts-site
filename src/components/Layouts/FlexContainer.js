@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 const FlexContainer = styled.div`
   display: flex;
@@ -7,6 +7,7 @@ const FlexContainer = styled.div`
   text-align: ${props => props.text_align};
   justify-content: ${props => props.spacing};
   align-items: ${props => props.align_items};
-`;
+  height: fit-content;
+`
 
-export default FlexContainer;
+export default FlexContainer

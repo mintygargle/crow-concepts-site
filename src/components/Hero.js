@@ -25,9 +25,6 @@ function scrollHandler(event) {
   var trackLength = docheight - winheight
   var pctScrolled = Math.floor((scrollTop / trackLength) * 100)
 
-  console.log("PCT:" + pctScrolled)
-  console.log("1/pct: " + 1 / pctScrolled)
-
   var reflection = document.getElementsByClassName("reflection-text")[0]
 
   if (reflection != undefined) {

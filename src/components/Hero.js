@@ -1,10 +1,11 @@
 import React, { useEffect } from "react"
 import PropTypes from "prop-types"
+import { window, document } from "global"
+
 import { Title, P } from "./Text/text_index"
 import { PrimaryBtn } from "./Buttons/button_index"
 import { FlexContainer } from "./Layouts/layout_index"
 import Background from "./Background"
-import { window, document } from "global"
 
 function getDocHeight() {
   var D = document
@@ -35,9 +36,14 @@ function scrollHandler(event) {
 function addListeners() {
   window.addEventListener("scroll", scrollHandler)
 }
-addListeners()
+
 
 const Hero = props => {
+
+  useEffect(() => {
+    addListeners()
+  }, []); 
+
   return (
     <Background image={props.image} {...props}>
       <div className="--center v-center">

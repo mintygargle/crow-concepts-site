@@ -35,7 +35,7 @@ const PhotoFetcher = props => {
                 title={item.title}
                 photographer={item.photographer}
                 medium={item.medium}
-                image={apiURL + item.image.url}
+                image={item.image.url}
                 className="foreground"
               ></Card.Photo>
             )

@@ -30,7 +30,7 @@ const BookFetcher = props => {
               <Card.Book
                 title={item.title}
                 author={item.author}
-                image={apiURL + item.image.url}
+                image={item.image.url}
                 description={item.description}
                 link={item.purchase_link}
               ></Card.Book>

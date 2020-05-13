@@ -7,7 +7,7 @@ import axios from "axios"
 const FilmFetcher = props => {
   const [films, setFilms] = useState(null)
 
-  const apiURL = "https://crow-concepts-admin.herokuapp.com"
+  const apiURL = "https://crow-concepts-backend.herokuapp.com"
   const collection = "/films"
 
   const fetchData = async () => {

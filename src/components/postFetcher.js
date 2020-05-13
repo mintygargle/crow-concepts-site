@@ -4,7 +4,7 @@ import axios from "axios"
 const PostFetcher = () => {
   const [posts, setPosts] = useState(null)
 
-  const apiURL = "https://crow-concepts-admin.herokuapp.com"
+  const apiURL = "https://crow-concepts-backend.herokuapp.com"
   const collection = "/posts"
 
   const fetchData = async () => {

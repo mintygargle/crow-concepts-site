@@ -7,7 +7,7 @@ import * as Card from "../components/Cards/card_index"
 const BookFetcher = props => {
   const [books, setBooks] = useState(null)
 
-  const apiURL = "http://localhost:1337"
+  const apiURL = "https://crow-concepts-backend.herokuapp.com"
   const collection = "/books"
 
   const fetchData = async () => {

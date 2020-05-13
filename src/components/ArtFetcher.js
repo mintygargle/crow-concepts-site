@@ -8,7 +8,7 @@ const ArtFetcher = props => {
   const [art, setArt] = useState(null)
 
   //   const apiURL = "http://localhost:1337"
-  const apiURL = "https://crow-concepts-admin.herokuapp.com"
+  const apiURL = "https://crow-concepts-backend.herokuapp.com"
   const collection = "/arts"
 
   const fetchData = async () => {

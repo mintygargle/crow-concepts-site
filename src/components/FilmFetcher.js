@@ -8,7 +8,7 @@ const FilmFetcher = props => {
   const [films, setFilms] = useState(null)
 
   const apiURL = "https://crow-concepts-backend.herokuapp.com"
-  const collection = "/films"
+  const collection = "/video"
 
   const fetchData = async () => {
     const response = await axios.get(apiURL + collection)

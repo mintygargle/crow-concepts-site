@@ -25,13 +25,15 @@ const Footer = styled(component)`
     content: "";
     display: block;
     width: 0%;
-    transition: width 0.4s;
+    opacity: 0;
+    transition: width 0.4s, opacity 0.4s;
     border-bottom: 1px solid ${props => props.theme.white};
   }
 
   a:hover {
     color: ${props => props.theme.accent};
     &:after {
+      opacity: 1;
       width: 100%;
     }
   }

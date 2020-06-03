@@ -1,15 +1,10 @@
 import React from "react"
 import { useForm, Controller } from "react-hook-form"
 
-import {
-  Textbox,
-  Textarea,
-  Label,
-  InputGroup,
-} from "../components/Forms/form_index"
-import Form from "../components/Forms/Form.styled"
-import * as Text from "../components/Text/text_index"
-import { PrimaryBtn } from "../components/Buttons/button_index"
+import { Textbox, Textarea, Label, InputGroup } from "../Forms/form_index"
+import Form from "../Forms/Form.styled"
+import * as Text from "../Text/text_index"
+import { PrimaryBtn } from "../Buttons/button_index"
 
 const ContactForm = () => {
   const user = "michaelmontytanner@gmail.com"

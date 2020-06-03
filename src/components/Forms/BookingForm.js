@@ -6,10 +6,10 @@ import {
   Label,
   InputGroup,
   Checkbox,
-} from "../components/Forms/form_index"
-import Form from "../components/Forms/Form.styled"
-import * as Text from "../components/Text/text_index"
-import { PrimaryBtn } from "../components/Buttons/button_index"
+} from "../Forms/form_index"
+import Form from "../Forms/Form.styled"
+import * as Text from "../Text/text_index"
+import { PrimaryBtn } from "../Buttons/button_index"
 
 const BookingForm = () => {
   return (

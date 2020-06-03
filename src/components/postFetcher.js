@@ -17,7 +17,7 @@ const PostFetcher = () => {
 
   useEffect(async () => fetchData(), [])
 
-  if (posts) {
+  if (posts && posts.length > 0) {
     return (
       <div>
         <article>

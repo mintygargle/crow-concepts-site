@@ -25,12 +25,12 @@ const BookFetcher = props => {
       items={
         (books &&
           books.map(item => {
-            console.log(item.image.url)
+            console.log(item.image)
             return (
               <Card.Book
                 title={item.title}
                 author={item.author}
-                image={item.image.url}
+                image={item.cover}
                 description={item.description}
                 link={item.purchase_link}
               ></Card.Book>

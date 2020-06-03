@@ -29,13 +29,13 @@ const PhotoFetcher = props => {
       items={
         (photos &&
           photos.map(item => {
-            console.log(item.image.url)
+            console.log(item.image)
             return (
               <Card.Photo
                 title={item.title}
                 photographer={item.photographer}
                 medium={item.medium}
-                image={item.image.url}
+                image={item.image}
                 className="foreground"
               ></Card.Photo>
             )

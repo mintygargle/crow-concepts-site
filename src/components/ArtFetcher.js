@@ -35,7 +35,7 @@ const ArtFetcher = props => {
                 title={item.title}
                 artist={item.artist}
                 medium={item.medium}
-                image={item.image.url}
+                image={item.image}
                 className="foreground"
               ></Card.Art>
             )

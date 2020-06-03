@@ -58,7 +58,9 @@ const BookCard = props => {
               </p>
             </Container>
 
-            <PrimaryBtn>Buy Now</PrimaryBtn>
+            <PrimaryBtn>
+              <a href={props.link}>Buy Now</a>
+            </PrimaryBtn>
           </Container>
         </Padder>
       </Container>

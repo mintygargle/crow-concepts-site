@@ -42,13 +42,15 @@ const MainNavContainer = styled.header`
     content: "";
     display: block;
     width: 0%;
-    transition: width 0.4s;
+    opacity: 0;
+    transition: width 0.4s, opacity 0.4s;
     border-bottom: 1px solid ${props => props.theme.white};
   }
 
   a:hover {
     &:after {
       width: 100%;
+      opacity: 1;
     }
   }
 

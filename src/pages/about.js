@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import * as Text from "../components/Text/text_index"
-import { List } from "../components/Layouts/layout_index"
 import Tabs from "../components/Nav/Tabs.styled"
 
 const About = () => {

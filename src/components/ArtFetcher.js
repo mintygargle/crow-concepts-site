@@ -7,7 +7,6 @@ import axios from "axios"
 const ArtFetcher = props => {
   const [art, setArt] = useState(null)
 
-  //   const apiURL = "http://localhost:1337"
   const apiURL = "https://crow-concepts-backend.herokuapp.com"
   const collection = "/arts"
 

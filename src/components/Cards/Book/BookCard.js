@@ -37,9 +37,7 @@ const BookCard = props => {
   const desc = useRef(null)
   // const { height, width } = useWindowDimensions()
 
-  useEffect(() => {
-    console.log(desc.current)
-  }, [desc])
+  useEffect(() => {}, [desc])
 
   if (true) {
     return (

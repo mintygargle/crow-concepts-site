@@ -1,17 +1,15 @@
-import React, { useEffect, useRef } from "react";
-import PropTypes from "prop-types";
+import React, { useEffect, useRef } from "react"
+import PropTypes from "prop-types"
 
-import { H2, HR } from "../../Text/text_index";
-import { FlexContainer as Container, List } from "../../Layouts/layout_index";
-import { SecondaryBtn } from "../../Buttons/button_index";
-import { toggleClass } from "../../../utils/toggleClass";
+import { H2, HR } from "../../Text/text_index"
+import { FlexContainer as Container, List } from "../../Layouts/layout_index"
+import { SecondaryBtn } from "../../Buttons/button_index"
+import { toggleClass } from "../../../utils/toggleClass"
 
 const VideoCard = props => {
-  const list = useRef(null);
+  const list = useRef(null)
 
-  useEffect(() => {
-    console.log(list.current);
-  }, [list]);
+  useEffect(() => {}, [list])
   // https://www.youtube.com/watch?feature=share&v=ZlC8j6aZXIs&fbclid=IwAR1lKlde0GduswUNUCVFeKfnrwZdz88UMHO4fJGQLmWbsi02i9HmTYzSAbE&app=desktop
 
   // https://www.youtube.com/watch?feature=youtu.be&v=BEM5grlZ-k8&fbclid=IwAR3tfn0Gi2L2BGLmrB5EgHOIzRMWuQRX5fR1DxaXPnzWMWHe1wv2AVfoQfw&app=desktop
@@ -41,8 +39,8 @@ const VideoCard = props => {
       </ul>
       <HR></HR>
     </Container>
-  );
-};
+  )
+}
 
 VideoCard.propTypes = {
   title: PropTypes.string,
@@ -50,7 +48,7 @@ VideoCard.propTypes = {
   height: PropTypes.string,
   width: PropTypes.string,
   cast: PropTypes.array,
-  video: PropTypes.string
-};
+  video: PropTypes.string,
+}
 
-export default VideoCard;
+export default VideoCard

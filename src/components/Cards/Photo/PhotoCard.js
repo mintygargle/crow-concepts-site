@@ -1,13 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from "react"
+import PropTypes from "prop-types"
 
-import { P } from "../../Text/text_index";
-import Image from "../../Image.styled";
+import { P } from "../../Text/text_index"
+import Image from "../../Image.styled"
 import {
   FlexContainer as Container,
   FlexContainer as Details,
-  Padder
-} from "../../Layouts/layout_index";
+  Padder,
+} from "../../Layouts/layout_index"
 
 const PhotoCard = props => {
   return (
@@ -20,13 +20,13 @@ const PhotoCard = props => {
         </Details>
       </Padder>
     </Container>
-  );
-};
+  )
+}
 
 PhotoCard.propTypes = {
   photographer: PropTypes.string,
   title: PropTypes.string,
-  image: PropTypes.string
-};
+  image: PropTypes.string,
+}
 
-export default PhotoCard;
+export default PhotoCard

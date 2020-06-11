@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios"
+import { default as Button } from "./Buttons/PrimaryButton.styled"
+import { Link } from "gatsby"
+import PostCard from "../components/Cards/Post/PostCard"
 
 const PostFetcher = () => {
   const [posts, setPosts] = useState(null)
@@ -18,14 +21,22 @@ const PostFetcher = () => {
   useEffect(async () => fetchData(), [])
 
   if (posts && posts.length > 0) {
+    console.log(posts)
     return (
-      <div>
-        <article>
-          <h1>{posts[0].title}</h1>
-          <h2>{posts[0].author}</h2>
-          <p>{posts[0].date}</p>
-          {posts[0].body}
-        </article>
+      <div className="grid grid--col-3">
+        {posts.map(post => (
+          <div className="margin grid__item" key={post.title}>
+            <div className="">
+              <PostCard
+                post={post}
+                image={post.cover}
+                title={post.title}
+                author={post.author}
+                date={post.date}
+              ></PostCard>
+            </div>
+          </div>
+        ))}
       </div>
     )
   } else {

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 import Layout from "../components/layout"
 import * as Text from "../components/Text/text_index"
-import { useEffect } from "react"
 
 const PostPage = ({ location, history }) => {
   // const state = location.state || (typeof history === "object" && history.state)

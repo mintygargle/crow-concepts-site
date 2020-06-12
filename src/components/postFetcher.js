@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios"
-import { default as Button } from "./Buttons/PrimaryButton.styled"
-import { Link } from "gatsby"
 import PostCard from "../components/Cards/Post/PostCard"
 
 const PostFetcher = () => {
@@ -18,7 +16,7 @@ const PostFetcher = () => {
     setPosts(response.data)
   }
 
-  useEffect(async () => fetchData(), [])
+  useEffect(() => fetchData(), [])
 
   if (posts && posts.length > 0) {
     console.log(posts)

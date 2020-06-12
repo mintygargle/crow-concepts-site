@@ -10,7 +10,7 @@ const MainLinks = props => {
       <FlexContainer {...props}>
         <Link to="/">Home</Link>
         <Link to="/photos">Photography</Link>
-        <Link to="/art">Art</Link>
+        <Link to="/arttest">Art</Link>
         <Link to="/books">Books</Link>
         <Link to="/films">Films</Link>
         <Link to="/about">About</Link>

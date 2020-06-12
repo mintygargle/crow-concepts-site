@@ -18,7 +18,7 @@ const ArtFetcher = props => {
     setArt(response.data)
   }
 
-  useEffect(async () => fetchData(), [])
+  useEffect(() => fetchData(), [])
 
   return (
     <Layout.GalleryPage

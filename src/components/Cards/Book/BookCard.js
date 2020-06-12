@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef } from "react"
 import PropTypes from "prop-types"
 
 import { P } from "../../Text/text_index"
@@ -6,7 +6,6 @@ import { SecondaryBtn, PrimaryBtn } from "../../Buttons/button_index"
 import Image from "../../Image.styled"
 import { FlexContainer as Container, Padder } from "../../Layouts/layout_index"
 import { toggleClass } from "../../../utils/toggleClass"
-import { Link } from "../../Text/text_index"
 
 // function getWindowDimensions() {
 //   const { innerWidth: width, innerHeight: height } = window;

@@ -18,7 +18,7 @@ const BookFetcher = props => {
     setBooks(response.data)
   }
 
-  useEffect(async () => fetchData(), [])
+  useEffect(() => fetchData(), [])
   return (
     <Layout.ArchivePage
       title="Books"

@@ -19,7 +19,7 @@ const PhotoFetcher = props => {
     setPhotos(response.data)
   }
 
-  useEffect(async () => fetchData(), [])
+  useEffect(() => fetchData(), [])
 
   return (
     <Layout.GalleryPage

@@ -18,7 +18,7 @@ const FilmFetcher = props => {
     setFilms(response.data)
   }
 
-  useEffect(async () => fetchData(), [])
+  useEffect(() => fetchData(), [])
 
   return (
     <Layout.ArchivePage

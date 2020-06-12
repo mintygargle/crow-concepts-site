@@ -12,7 +12,7 @@ const ContactForm = () => {
   const { register, handleSubmit, watch, errors, control } = useForm()
 
   const onSubmit = data => {
-    const endpoint = "michaelmontytanner@gmail.com"
+    const endpoint = user
 
     fetch(endpoint, {
       method: "post",

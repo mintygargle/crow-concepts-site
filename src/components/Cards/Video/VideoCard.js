@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react"
 import PropTypes from "prop-types"
 
 import { H2, HR } from "../../Text/text_index"
-import { FlexContainer as Container, List } from "../../Layouts/layout_index"
+import { FlexContainer as Container } from "../../Layouts/layout_index"
 import { SecondaryBtn } from "../../Buttons/button_index"
 import { toggleClass } from "../../../utils/toggleClass"
 
@@ -25,6 +25,7 @@ const VideoCard = props => {
         height="auto"
         controls
         src={props.video}
+        title={props.title}
       >
         Your browser does not support the video tag.
       </iframe>

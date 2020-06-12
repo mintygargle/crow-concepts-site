@@ -12,7 +12,7 @@ const PostPage = ({ location, history }) => {
     }
 
     setState({ post: location.state.post })
-  })
+  }, [location.state.post])
 
   if (state) {
     return (

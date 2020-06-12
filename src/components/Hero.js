@@ -28,7 +28,7 @@ function scrollHandler(event) {
 
   var reflection = document.getElementsByClassName("reflection-text")[0]
 
-  if (reflection != undefined) {
+  if (reflection !== undefined) {
     reflection.style.opacity = 1 / pctScrolled
   }
 }
@@ -37,12 +37,10 @@ function addListeners() {
   window.addEventListener("scroll", scrollHandler)
 }
 
-
 const Hero = props => {
-
   useEffect(() => {
     addListeners()
-  }, []); 
+  }, [])
 
   return (
     <Background image={props.image} {...props}>

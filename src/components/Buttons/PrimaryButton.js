@@ -1,8 +1,8 @@
-import React from "react";
-import Button from "./Button";
+import React from "react"
+import Button from "./Button"
 
 const PrimaryButton = props => {
-  return <Button primary {...props}></Button>;
-};
+  return <Button primary={"true"} {...props}></Button>
+}
 
-export default PrimaryButton;
+export default PrimaryButton

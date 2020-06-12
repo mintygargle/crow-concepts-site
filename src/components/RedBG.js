@@ -1,5 +1,4 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from "react"
 
 const RedBG = props => {
   return (
@@ -12,9 +11,7 @@ const RedBG = props => {
       <div className="bar-6"></div>
       {props.children}
     </div>
-  );
-};
+  )
+}
 
-RedBG.propTypes = {};
-
-export default RedBG;
+export default RedBG

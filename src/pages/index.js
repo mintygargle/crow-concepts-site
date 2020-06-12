@@ -6,10 +6,7 @@ import Lake from "../images/lake.jpg"
 import Mountains from "../images/benjamin-voros-phIFdC6lA4E-unsplash.jpg"
 import Books from "../images/janko-ferlic-sfL_QOnmy00-unsplash.jpg"
 import V from "../images/jon-tyson-eIhH7RTlTZA-unsplash.jpg"
-import {
-  Gallery,
-  FlexContainer as Container,
-} from "../components/Layouts/layout_index"
+import { FlexContainer as Container } from "../components/Layouts/layout_index"
 import Image from "../components/Image.styled"
 import { SecondaryBtn } from "../components/Buttons/button_index"
 import * as Text from "../components/Text/text_index"

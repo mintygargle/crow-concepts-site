@@ -31,9 +31,9 @@ const theme = {
   shadow_color: "#0000004d",
 
   // Screen sizes
-  desktop: "1200px",
+  desktop: "1000px",
   tablet: "780px",
-  mobile: "320px"
-};
+  mobile: "320px",
+}
 
-export default theme;
+export default theme

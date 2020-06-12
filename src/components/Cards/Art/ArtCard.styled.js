@@ -8,10 +8,6 @@ const ArtCard = styled(component)`
   transition: max-width 0.4s;
 
   @media (max-width: 600px) {
-    max-width: 80%;
-  }
-
-  @media (max-width: 350px) {
     max-width: 100%;
 
     .details {
@@ -40,10 +36,6 @@ const ArtCard = styled(component)`
   .image {
     z-index: 1;
   }
-
-
-
-
 `
 
 export default ArtCard

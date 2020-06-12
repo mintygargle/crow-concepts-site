@@ -3,6 +3,7 @@ import { default as component } from "./Form"
 
 const Form = styled(component)`
   width: 50%;
+  min-width: 280px;
   padding: 1em;
   border-style: solid;
   border-radius: 16px;

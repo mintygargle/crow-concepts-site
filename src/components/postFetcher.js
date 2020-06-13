@@ -2,22 +2,7 @@ import React, { useState, useEffect } from "react"
 import axios from "axios"
 import PostCard from "../components/Cards/Post/PostCard"
 
-const PostFetcher = () => {
-  const [posts, setPosts] = useState(null)
-
-  const apiURL = "https://crow-concepts-backend.herokuapp.com"
-  const collection = "/posts"
-
-  const fetchData = async () => {
-    const response = await axios.get(apiURL + collection)
-
-    console.log(response.data)
-
-    setPosts(response.data)
-  }
-
-  useEffect(() => fetchData(), [])
-
+const PostFetcher = ({ posts }) => {
   if (posts && posts.length > 0) {
     console.log(posts)
     return (

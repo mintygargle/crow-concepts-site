@@ -6,6 +6,9 @@ const art = "/arts"
 const films = "/videos"
 const photos = "/photos"
 const books = "/books"
+const posts = "/posts"
+
+const collections = [art, films, photos, books, posts]
 
 const get = endpoint => axios.get(`${apiURL}${endpoint}`)
 
@@ -23,8 +26,9 @@ exports.createPages = async ({ actions: { createPage } }) => {
   const allPhotos = await getContentData(photos)
   const allFilms = await getContentData(films)
   const allBooks = await getContentData(books)
+  const allPosts = await getContentData(posts)
 
-  if (!allArt || !allPhotos || !allBooks) {
+  if (!allArt || !allPhotos || !allBooks || !allPosts) {
     console.log("NO DATA")
     return null
   }
@@ -52,6 +56,12 @@ exports.createPages = async ({ actions: { createPage } }) => {
     path: `/books`,
     component: path.resolve(`./src/templates/books.js`),
     context: { allBooks },
+  })
+
+  createPage({
+    path: `/blog`,
+    component: path.resolve(`./src/templates/blog.js`),
+    context: { allPosts },
   })
 
   console.log("Pages created")

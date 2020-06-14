@@ -18,7 +18,7 @@ const theme = {
   x_small: "14px",
   small: "16px",
   medium: "24px",
-  large: "36px",
+  large: "32px",
   x_large: "48px",
 
   // Styles

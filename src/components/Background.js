@@ -8,7 +8,6 @@ const Background = styled.div`
     url(${props => props.image}) no-repeat center center scroll;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
 `
 
 export default Background

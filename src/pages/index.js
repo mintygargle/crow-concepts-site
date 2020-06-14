@@ -41,7 +41,7 @@ const IndexPage = ({ data }) => (
             <Text.H1>Photography</Text.H1>
             <Text.P>
               We are here to capture your concept and help you create powerful
-              images for you or your company.
+              images.
             </Text.P>
           </Container>
         </Container>
@@ -55,9 +55,8 @@ const IndexPage = ({ data }) => (
           <Container direction="column" className="m-2r mt-0r">
             <Text.H1>Art</Text.H1>
             <Text.P>
-              Let us help you create your concept. From crafting custom pieces
-              of artwork to helping you illustrate your story, Crow Concepts
-              offers our clients a way to express themselves through art.
+              From commissioned artwork to story illustration, Crow Concepts
+              offers a way to express yourself through art.
             </Text.P>
           </Container>
           <Image className="foreground" src={V} width="50%"></Image>
@@ -73,8 +72,8 @@ const IndexPage = ({ data }) => (
           <Container direction="column" className="m-2r mt-0r">
             <Text.H1>Writing</Text.H1>
             <Text.P>
-              Let us help write your story. Here at Crow Concepts our writers
-              give you an edge to help you get your audience drawn to your work.
+              Let us help write your story. Our writers give you the tools to
+              draw audiences to your work.
             </Text.P>
           </Container>
         </Container>

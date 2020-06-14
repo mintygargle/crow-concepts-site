@@ -15,7 +15,8 @@ body {
   font-weight: 400;
   line-height: 2;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 title {

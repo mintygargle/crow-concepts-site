@@ -6,7 +6,7 @@ const Title = styled(component)`
   font-size: ${props => props.theme.x_large};
   color: ${props => props.theme.font_light};
 
-  @media (max-width: 360px) {
+  @media (max-width: 450px) {
     font-size: ${props => props.theme.large};
   }
 `

@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { default as component } from "./MainLinks";
+import styled from "styled-components"
+import { default as component } from "./MainLinks"
 
 const MainLinks = styled(component)`
   display: flex;
-`;
+`
 
-export default MainLinks;
+export default MainLinks

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { default as component } from "./SecondaryButton";
+import styled from "styled-components"
+import { default as component } from "./SecondaryButton"
 
 const SecondaryButton = styled(component)`
   background-color: ${props => props.theme.white};
@@ -19,6 +19,6 @@ const SecondaryButton = styled(component)`
   &:active {
     filter: brightness(85%);
   }
-`;
+`
 
-export default SecondaryButton;
+export default SecondaryButton

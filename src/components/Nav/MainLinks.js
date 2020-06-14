@@ -15,10 +15,13 @@ const MainLinks = props => {
         <Link to="/films">Films</Link>
         <Link to="/about">About</Link>
         <Link to="/blog">Blog</Link>
+
         <Link to="/contact">Contact</Link>
-        <Link to="/booking" className="btn-link">
-          <SecondaryBtn>Booking</SecondaryBtn>
-        </Link>
+        <SecondaryBtn>
+          <Link to="/booking" className="btn-link">
+            Booking
+          </Link>
+        </SecondaryBtn>
       </FlexContainer>
     </nav>
   )

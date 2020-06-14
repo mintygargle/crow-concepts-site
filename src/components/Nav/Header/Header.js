@@ -60,12 +60,16 @@ const MainNavContainer = styled.header`
   }
 
   .btn-link {
+    color: ${({ theme }) => theme.primary};
     &:after {
+      display: none;
+      height: 0;
       border: none;
     }
   }
 
   .btn-link:hover {
+    color: ${({ theme }) => theme.primary};
     &:after {
       border: none;
     }
@@ -155,7 +159,7 @@ const LinkMenu = styled.nav`
   flex-direction: row;
   justify-content: space-between;
   flex-position: bottom;
-  width: 60%;
+  width: 70%;
 
   a {
     padding: 0 1rem;

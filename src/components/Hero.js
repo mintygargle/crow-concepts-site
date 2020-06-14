@@ -18,17 +18,22 @@ function getDocHeight() {
     D.documentElement.clientHeight
   )
 }
+function getDocWidth() {
+  var D = document
+  return Math.max(D.body.clientWidth, D.documentElement.clientWidth)
+}
 
 function scrollHandler(event) {
   var winheight = window.innerHeight
   var docheight = getDocHeight()
+  var docwidth = getDocWidth()
   var scrollTop = window.pageYOffset
   var trackLength = docheight - winheight
   var pctScrolled = Math.floor((scrollTop / trackLength) * 100)
 
   var reflection = document.getElementsByClassName("reflection-text")[0]
 
-  if (reflection !== undefined) {
+  if (reflection !== undefined && docwidth > 450) {
     reflection.style.opacity = 1 / pctScrolled
   }
 }

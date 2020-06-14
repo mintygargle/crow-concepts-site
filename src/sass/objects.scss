@@ -212,6 +212,10 @@
     color-stop(30%, transparent),
     to(rgba(0, 0, 0, 0.5))
   );
+
+  @media (max-width: 450px) {
+    opacity: 0;
+  }
 }
 
 // Dimensions

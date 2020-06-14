@@ -23,6 +23,14 @@ export const StyledMenu = styled.nav`
     transform: translateX(100%);
   }
 
+  .btn-link {
+    color: ${({ theme }) => theme.primary};
+
+    &:hover {
+      color: ${({ theme }) => theme.primary};
+    }
+  }
+
   a {
     color: white;
        font-size: 1.2rem;

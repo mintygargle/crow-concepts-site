@@ -15,7 +15,7 @@ export default ({ pageContext: { allFilms } }) => (
                 title={item.title}
                 cast={item.cast.cast}
                 link={item.link}
-                video={item.video_link}
+                video={item.video_url}
               ></VideoCard>
             )
           })) || [<VideoCard cast={[""]}></VideoCard>]

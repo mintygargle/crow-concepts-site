@@ -21,9 +21,11 @@ const VideoCard = props => {
 
       <iframe
         className="mb-1r"
-        width="80%"
-        height="auto"
+        width="100%"
+        height="315"
         controls
+        allowfullscreen
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         src={props.video}
         title={props.title}
       >

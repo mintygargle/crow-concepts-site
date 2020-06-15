@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import { P } from "../../Text/text_index"
+import { P, HR } from "../../Text/text_index"
 import Image from "../../Image.styled"
 import {
   FlexContainer as Container,
@@ -13,12 +13,12 @@ const PhotoCard = props => {
   return (
     <Container {...props} direction="column">
       <Image className="image" border src={props.image} alt=""></Image>
-      <Padder>
-        <Details className="details" direction="column">
-          <P>{"Title:\t" + props.title}</P>
-          <P>{"Photographer:\t" + props.photographer}</P>
-        </Details>
-      </Padder>
+
+      <Details className="details" direction="column">
+        <P>{"Title:\t" + props.title}</P>
+        <P>{"Photographer:\t" + props.photographer}</P>
+        <HR></HR>
+      </Details>
     </Container>
   )
 }

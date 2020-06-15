@@ -16,6 +16,8 @@ const BookingForm = () => {
     <div>
       <Text.Banner>Booking</Text.Banner>
       <Form action="" className="wrapper --center col border">
+        <Text.H2>Information</Text.H2>
+
         <InputGroup>
           <Label>Name</Label>
           <Textbox></Textbox>
@@ -28,8 +30,10 @@ const BookingForm = () => {
           <Label>Phone Number</Label>
           <Textbox></Textbox>
         </InputGroup>
+        <Text.HR></Text.HR>
+        <Text.H2>Desired Services</Text.H2>
+        <p>(check all that apply)</p>
         <InputGroup>
-          <Label>Desired Services (check all that apply)</Label>
           <InputGroup>
             <Label>Photography</Label>
             <Checkbox></Checkbox>
@@ -47,6 +51,8 @@ const BookingForm = () => {
             <Checkbox></Checkbox>
           </InputGroup>
         </InputGroup>
+        <Text.HR></Text.HR>
+        <Text.H2>Message</Text.H2>
         <InputGroup>
           <Label>Subject</Label>
           <Textbox></Textbox>

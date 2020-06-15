@@ -1,9 +1,10 @@
-import React from "react";
+import React from "react"
 
-import * as Text from "../Text/text_index";
-import { PrimaryBtn } from "../Buttons/button_index";
-import * as Layout from "./layout_index";
-import RedBG from "../RedBG.styled";
+import * as Text from "../Text/text_index"
+import { PrimaryBtn } from "../Buttons/button_index"
+import * as Layout from "./layout_index"
+import RedBG from "../RedBG.styled"
+import { Link } from "gatsby"
 
 const GalleryPage = props => {
   return (
@@ -18,11 +19,13 @@ const GalleryPage = props => {
 
       <Text.HR></Text.HR>
       <div className="--center m-1r">
-        <PrimaryBtn>{props.cta}</PrimaryBtn>
+        <PrimaryBtn>
+          <Link to="/booking">{props.cta}</Link>
+        </PrimaryBtn>
       </div>
       <Text.HR></Text.HR>
     </div>
-  );
-};
+  )
+}
 
-export default GalleryPage;
+export default GalleryPage

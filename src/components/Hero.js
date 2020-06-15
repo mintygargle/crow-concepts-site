@@ -6,6 +6,7 @@ import { Title, P } from "./Text/text_index"
 import { PrimaryBtn } from "./Buttons/button_index"
 import { FlexContainer } from "./Layouts/layout_index"
 import Background from "./Background"
+import { Link } from "gatsby"
 
 function getDocHeight() {
   var D = document
@@ -60,7 +61,9 @@ const Hero = props => {
             spacing="space-between"
             className="cta-container"
           >
-            <PrimaryBtn className="m-1r foreground">{props.cta}</PrimaryBtn>
+            <PrimaryBtn className="m-1r foreground">
+              <Link to="/booking">{props.cta}</Link>
+            </PrimaryBtn>
             <P className="m-1r">{props.tagline}</P>
           </FlexContainer>
         </FlexContainer>

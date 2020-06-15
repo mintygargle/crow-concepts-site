@@ -5,6 +5,8 @@ import MainLinks from "../MainLinks"
 import Menu from "../Menu/Menu"
 import Burger from "../Menu/Burger"
 import { useOnClickOutside } from "../../../utils/useOnClickOutside"
+import { Link } from "gatsby"
+import Logo from "../Logo/Logo"
 
 const MainNavContainer = styled.header`
   align-content: center;
@@ -114,12 +116,6 @@ const LogoContainer = styled.div`
   margin-right: 1rem;
 `
 
-const Logo = styled.img`
-  position: absolute;
-  bottom: 0;
-  cursor: pointer;
-`
-
 const TitleContainer = styled.div`
   width: 40%;
   flex-position: bottom;
@@ -166,6 +162,27 @@ const LinkMenu = styled.nav`
   }
 `
 
+const LogoLink = styled.div`
+  a {
+    background-color: blue;
+
+    &:hover {
+      &:after {
+        display: none;
+        height: 0;
+        width: 0;
+        opacity: 0;
+      }
+    }
+    &:after {
+      display: none;
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
+  }
+`
+
 const Header = () => {
   const [open, setOpen] = useState(false)
   const node = useRef()
@@ -179,7 +196,11 @@ const Header = () => {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
         <LogoContainer className="box" id="logo">
-          <Logo src={LogoImg}></Logo>
+          <LogoLink>
+            <Link to="/">
+              <Logo src={LogoImg} />
+            </Link>
+          </LogoLink>
         </LogoContainer>
         <TitleContainer className="box" id="title">
           <Title>CrowConcepts</Title>

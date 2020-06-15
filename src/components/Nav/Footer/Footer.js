@@ -21,7 +21,7 @@ const Footer = props => {
           <FooterHeading>Quick Links</FooterHeading>
           <Link to="/booking">Booking</Link>
           <Link to="/about">About Us</Link>
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
           <Link to="/photos">Photos</Link>
         </ExploreLinks>
         <SocialLinks direction="column" text_align="right">

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react"
 import PropTypes from "prop-types"
 
-import { P } from "../../Text/text_index"
+import { P, H2 } from "../../Text/text_index"
 import { SecondaryBtn, PrimaryBtn } from "../../Buttons/button_index"
 import Image from "../../Image.styled"
 import { FlexContainer as Container, Padder } from "../../Layouts/layout_index"
@@ -42,7 +42,7 @@ const BookCard = props => {
     return (
       <Container {...props} direction="column">
         <Padder>
-          <P>{props.title}</P>
+          <H2>{props.title}</H2>
           <P>{props.author}</P>
           <Image src={props.image}></Image>
           <Container direction="row" spacing="space-around">
@@ -71,7 +71,7 @@ const BookCard = props => {
         </Padder>
         <Container direction="column" className="description">
           <Padder>
-            <h1>{props.title}</h1>
+            <H2>{props.title}</H2>
             <p className="" ref={desc}>
               {props.description}
             </p>

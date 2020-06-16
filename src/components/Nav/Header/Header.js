@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react"
 import styled from "styled-components"
-import LogoImg from "../../../images/Crow (4).svg"
+import LogoImg from "../../../images/Group 1.svg"
 import MainLinks from "../MainLinks"
 import Menu from "../Menu/Menu"
 import Burger from "../Menu/Burger"
@@ -195,13 +195,6 @@ const Header = () => {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
-        <LogoContainer className="box" id="logo">
-          <LogoLink>
-            <Link to="/">
-              <Logo src={LogoImg} />
-            </Link>
-          </LogoLink>
-        </LogoContainer>
         <TitleContainer className="box" id="title">
           <Title>CrowConcepts</Title>
         </TitleContainer>
